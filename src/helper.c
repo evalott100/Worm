@@ -62,7 +62,6 @@ void quit (int reason)
 	exit(EXIT_SUCCESS);
 }
 
-
 //Returns the x-y size of the terminal
 void get_term_size(int *rows, int *cols)
 {
@@ -78,7 +77,6 @@ void get_term_size(int *rows, int *cols)
 	*rows = ws.ws_row;
 	*cols = ws.ws_col;
 }
-
 
 //Signal handler
 void handler (int signum)

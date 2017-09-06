@@ -1,11 +1,10 @@
+#ifndef WORMS_H
+#define WORMS_H
 /*
   ====== worms.h =======
   Eva Lott
   Interface to worms functions
 */
-
-#ifndef WORMS_H
-#define WORMS_H
 
 struct worm_part {
 	struct worm_part *next;

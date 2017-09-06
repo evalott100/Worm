@@ -14,7 +14,7 @@
 #include "worms.h"
 #include "helper.h"
 
-#define TIMESTEP 200000
+#define TIMESTEP 30000
 
 void set_timer (void);
 void set_signals (void);
@@ -30,7 +30,7 @@ int main (void)
 	set_signals();
 	
 	//Initialize ncurses
-	if((mainwin = initscr()) == NULL){
+	if ((mainwin = initscr()) == NULL) {
 		perror("error initialising ncurses");
 		exit(EXIT_FAILURE);
 	}
@@ -48,34 +48,34 @@ int main (void)
 
 		switch (key) {
 
-		case KEY_UP:
-		case 'Y':
-		case 'y':
-			change_dir(UP);
-		break;
+			case KEY_UP:
+			case 'Y':
+			case 'y':
+				change_dir(UP);
+			break;
 
-		case KEY_DOWN:
-		case 'N':
-		case 'n':
-			change_dir(DOWN);
-		break;
+			case KEY_DOWN:
+			case 'N':
+			case 'n':
+				change_dir(DOWN);
+			break;
 
-		case KEY_LEFT:
-		case 'G':
-		case 'g':
-			change_dir(LEFT);
-		break;
+			case KEY_LEFT:
+			case 'G':
+			case 'g':
+				change_dir(LEFT);
+			break;
 
-		case KEY_RIGHT:
-		case 'J':
-		case 'j':
-			change_dir(RIGHT);
-		break;
+			case KEY_RIGHT:
+			case 'J':
+			case 'j':
+				change_dir(RIGHT);
+			break;
 
-		case 'Q':
-		case 'q':
-			quit(USER_QUIT);
-		break;
+			case 'Q':
+			case 'q':
+				quit(USER_QUIT);
+			break;
 		}
 	}
 
@@ -98,16 +98,14 @@ void set_timer (void)
 	setitimer(ITIMER_REAL,&it,NULL);
 }
 
-
 //Sets up signal handlers we need
-
 void set_signals (void)
 {
 	struct sigaction sa;
 
 	//Fill in sigaction struct
 	sa.sa_handler = handler;
-	sa.sa_flags   = 0;
+	sa.sa_flags = 0;
 	sigemptyset(&sa.sa_mask);
 
 	//Set signal handlers

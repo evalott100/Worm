@@ -154,7 +154,7 @@ void place_food (void)
 	do {
 		x = rand() % (cols - 3) + 1;
 		y = rand() % (rows - 3) + 1;
-		move(y, x);
+		move(y,x);
 	}
 	while (inch() != EMPTY);
 
@@ -176,25 +176,25 @@ void change_dir (int d)
 			if (dir == RIGHT)
 				return;
 			move(temp->y,temp->x - 1);
-			break;
+		break;
 	  
 		case RIGHT:
 			if (dir == LEFT)
 				return;
 			move(temp->y,temp->x + 1);
-			break;
+		break;
 
 		case UP:
 			if (dir == DOWN)
 				return;
 			move(temp->y - 1,temp->x);
-			break;
+		break;
 
 		case DOWN:
 			if (dir == UP)
 				return;
-			move(temp->y + 1,temp->x);
-			break;
+		move(temp->y + 1,temp->x);
+		break;
 	}
 
 	dir = d;
