@@ -1,7 +1,7 @@
 /*
-  ====== worms.c ======
-  Eva Lott
-  Implementation of worms functions.
+	====== worms.c ======
+	Eva Lott
+	Implementation of worms functions.
 */
 
 #include <stdlib.h>

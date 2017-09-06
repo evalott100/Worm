@@ -1,7 +1,7 @@
 /*
-  ====== helper.c ======
-  Eva Lott
-  Helper functions.
+	====== helper.c ======
+	Eva Lott
+	Helper functions.
 */
 
 #include <stdlib.h>

@@ -1,7 +1,7 @@
 /*
-  ====== main.c ======
-  Eva Lott
-  Worms game using ncurses.
+	====== main.c ======
+	Eva Lott
+	Worms game using ncurses.
 */
 
 #include <stdlib.h>

@@ -1,9 +1,9 @@
 #ifndef WORMS_H
 #define WORMS_H
 /*
-  ====== worms.h =======
-  Eva Lott
-  Interface to worms functions
+	====== worms.h =======
+	Eva Lott
+	Interface to worms functions
 */
 
 struct worm_part {

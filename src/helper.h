@@ -1,9 +1,9 @@
 #ifndef HELPER_H
 #define HELPER_H
 /*
-  ====== helper.h ======
-  Eva Lott
-  Interface to helper functions.
+	====== helper.h ======
+	Eva Lott
+	Interface to helper functions.
 */
 
 #define USER_QUIT 1
